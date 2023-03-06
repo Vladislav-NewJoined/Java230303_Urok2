@@ -1,21 +1,20 @@
 public class zadanie15 {
     //15. Задать две строковых переменных. Найти, какая из них длиннее. (Используйте .length() )
     public static void main(String[] args) {
-        String s1 = "Вы - разработчики";
-        int len1 = s1.length();
-        String s2 = "Вы - программисты";
-        int len2 = s2.length();
-
-        // Вывод на экран количества символов в каждой строке.
-        System.out.println( "Длина строки \"Вы - разработчики\": " + len1 + " символ.");
-        System.out.println( "Длина строки \"Вы - программисты\": " + len2 + " символ.");
-
-        // Сравнение длин строк s1 и s2.
-        if (len1 < len2){
-            System.out.println( "\nСтрока \"Вы - разработчики\" короче строки \"Вы - программисты\".");
+        String str1 = "Вы - разработчики";
+        int len1 = str1.length();
+        String str2 = "Вы - программисты";
+        int len2 = str2.length();
+        System.out.println("Длина строки 1: " + len1);
+        System.out.println("Длина строки 2: " + len2);
+        if (len1 == len2) {
+            System.out.println("Длины строк равны.");
         }
-        else {
-            System.out.println( "\nСтроки \"Вы - разработчики\" и \"Вы - программисты\" равны.");
+        if (len1 > len2) {
+            System.out.println("Длина строки 1 больше.");
+        }
+        if (len1 < len2) {
+            System.out.println("Длина строки 2 больше.");
         }
     }
 }
